@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas - Virus Envelopado</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <script src="./src/js/script.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100dvh;
+            width: 100dvw;
+            background-color: black;
+        }
+        .estruturas_1{
+            height: calc(100dvh - 90px);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: white;
+        }
+        .conteudos{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .titulo_1{
+            padding: 20px;
+            background-color: #02735E;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .texto_1{
+            width: 800px;
+            padding: 20px;
+            background-color: #02735E;
+            border-radius: 4px;
+        }
+        .bacteriofago{
+            padding: 15px;
+            background-color: #014034;
+            border-radius: 4px;
+        }
+        .bacteriofago img{
+            width: 400px;
+        }
+    </style>
+</head>
+<body id="body">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="./estruturas.html" class="nav-link">Estruturas</a></li>
+                    <li class="nav-item"><a href="#culminancia" class="nav-link">Culminância</a></li>
+                    <li class="nav-item"><a href="#ferramentas" class="nav-link">Ferramentas</a></li>
+                    <li class="nav-item"><a href="#microorganismo" class="nav-link">Microorganismo</a></li>
+                </ul>
+            </div>
+
+            <div class="sobre">
+                <button><a href="#sobre">Sobre</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img src="src/img/menu_white_36dp.svg" alt="" class="icon"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="./estruturas.html" class="nav-link">Estruturas</a></li>
+                <li class="nav-item"><a href="#culminancia" class="nav-link">Culminância</a></li>
+                <li class="nav-item"><a href="#ferramentas" class="nav-link">Ferramentas</a></li>
+                <li class="nav-item"><a href="#microorganismo" class="nav-link">Microorganismo</a></li>
+
+            </ul>
+
+            <div class="sobre">
+                <button><a href="#sobre">Sobre</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="estruturas_1">
+        <div class="bacteriofago">
+            <img src="./src/img/virus_envelopado_estrutura.jpg"  alt="">
+        </div>
+        <div class="conteudos">
+            <div class="titulo_1">
+                <h1>Virus envelopado</h1>
+            </div>
+            <div class="texto_1">
+                <p>Vírus envelopados possuem uma camada lipídica externa derivada da membrana da célula hospedeira, que contém proteínas importantes para a ligação e entrada nas células. Dentro do envelope, um capsídeo proteico envolve o material genético, que pode ser DNA ou RNA. O envelope desempenha funções essenciais, como facilitar a fusão com a célula hospedeira, proteger o material genético e ajudar o vírus a escapar da detecção pelo sistema imunológico. Exemplos de vírus envelopados incluem HIV, Influenza, Herpes, Hepatite C e SARS-CoV-2. Esses vírus são mais vulneráveis a condições adversas, mas dependem do envelope para infectar células. Já os vírus nus, que não possuem essa camada lipídica, possuem cápsides mais resistentes, o que os torna mais robustos contra fatores ambientais como desidratação e calor extremo. Apesar disso, sua estratégia de infecção é diferente, pois não utilizam um envelope lipídico. Os vírus envelopados apresentam uma vantagem significativa no reconhecimento e na entrada nas células hospedeiras, graças àsproteínas específicas presentes em seu envelope. No entanto, essa camada lipídica os torna mais sensíveis a detergentes,solventes e desinfetantes, que podem dissolver o envelope e inativá-los. Em contrapartida, os vírus nus, por não dependerem deum envelope lipídico, tendem a ser mais estáveis em condições ambientais adversas, permitindo sua sobrevivência em superfíciespor períodos mais longos. Essas diferenças estruturais influenciam diretamente na forma como cada tipo de vírus é transmitido,detectado e combatido, tanto pelo sistema imunológico quanto por medidas de higiene e controle de infecções.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

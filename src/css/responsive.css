@@ -1,0 +1,239 @@
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    /* MENU */
+    header{
+        width: 100dvw;
+        position: absolute;
+        z-index: 200;
+    }
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .sobre{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding: 1.2rem;
+    }
+
+    .mobile-menu .nav-item .nav-link{
+        padding: 12px 170px;
+    }
+    .mobile-menu .sobre{
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .sobre button{
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+
+    /* HOME */
+    .home{
+        top: 80px;
+    }
+
+    /* ESTRUSTURAS */
+    div.container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 45px;
+        height: 270dvh;
+    }
+    div.container .estruturas{
+        width: 90%;
+        height: 100%;
+        gap: 80px;
+    }
+    div.container .estruturas{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .estruturas .estrutura{
+        width: 65%;
+        height: fit-content;
+    }
+    .estruturas .estrutura img{
+        width: 100%;
+        height: auto;
+        list-style-image: none;
+    }
+    .estruturas .estrutura h5{
+        width: 100%;
+        height: 50px;
+    }
+    
+    /* BACTERIOFAGO */
+    #body{
+        height: 185vh;
+    }
+    div.estruturas_1{
+        position: absolute;
+        z-index: 2;
+        top: 100px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+        height: 185dvh;
+        background: linear-gradient(#0d0d0d 40%, #777777 60%);
+    }
+    .estruturas_1 .bacteriofago{
+        width: fit-content;
+        width: 68%;
+    }
+    .estruturas_1 .bacteriofago img{
+        width: 100%;
+    }
+    .estruturas_1 .texto_1{
+        width: fit-content;
+        width: 100%;
+    }
+    .estruturas_1 .texto_1 h5{
+        width: 100%;
+    }
+    .estruturas_1 .texto_1 p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    /* ESTRUTURAS */
+    div.container{
+        height: 250dvh;
+    }
+    .estruturas .estrutura{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    
+}
+
+@media screen and (max-width: 768px){
+    /* HOME */
+    .home .titulo h1 {
+        font-size: 2.8em;
+    }
+
+    /* ESTRUTURAS */
+    div.container{
+        height: 240dvh;
+    }
+    .estruturas .estrutura{
+        width: 85%;
+    }
+
+    /* BACTERIOFAGO */
+    .estruturas_1 .bacteriofago{
+        width: fit-content;
+        width: 85%;
+    }
+    #body{
+        height: 150dvh;
+    }
+    div.estruturas_1{
+        height: 150dvh;
+    }
+}
+
+@media  screen and (max-width: 650px) {
+    /* HOME */
+    .home{
+        padding: 0 25px;
+    }
+    .home .titulo h1 {
+        font-size: 2.2em;
+    }
+    .home .texto p {
+        font-size: 14px;
+    }
+    .home .texto p br, .home .titulo h1 br{
+        display: none;
+    }
+    .home .btns button {
+        font-size: 13px;
+    }
+
+    /* ESTRUTURAS */
+    div.container{
+        height: 220dvh;
+    }
+    .estruturas .estrutura{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    /* MENU */
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 1rem;
+    }
+
+    /* HOME */
+    .home{
+        padding: 0 38px;
+    }
+    .home .titulo h1 {
+        font-size: 2em;
+    }
+    .home .texto p {
+        font-size: 18px;
+    }
+    
+    .home .btns button {
+        font-size: 15px;
+    }
+
+    /* ESTRUTURAS */
+    div.container{
+        height: 140dvh;
+    }
+    .estruturas .estrutura{
+        width: 95%;
+    }
+
+    /* BACTERIOFAGO */
+    #body{
+        height: 142dvh;
+    }
+    div.estruturas_1{
+        height: 142dvh;
+    }
+    .estruturas_1 .bacteriofago{
+        width: 95%;
+    }
+}

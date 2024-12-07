@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas - Virus Envelopado</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <script src="./src/js/script.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100dvh;
+            width: 100dvw;
+            background-color: black;
+        }
+        .estruturas_1{
+            height: calc(100dvh - 90px);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: white;
+        }
+        .conteudos{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .titulo_1{
+            padding: 20px;
+            background-color: #02735E;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .texto_1{
+            width: 800px;
+            padding: 20px;
+            background-color: #02735E;
+            border-radius: 4px;
+        }
+        .bacteriofago{
+            padding: 15px;
+            background-color: #014034;
+            border-radius: 4px;
+        }
+        .bacteriofago img{
+            width: 400px;
+        }
+    </style>
+</head>
+<body id="body">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="./estruturas.html" class="nav-link">Estruturas</a></li>
+                    <li class="nav-item"><a href="#culminancia" class="nav-link">Culminância</a></li>
+                    <li class="nav-item"><a href="#ferramentas" class="nav-link">Ferramentas</a></li>
+                    <li class="nav-item"><a href="#microorganismo" class="nav-link">Microorganismo</a></li>
+                </ul>
+            </div>
+
+            <div class="sobre">
+                <button><a href="#sobre">Sobre</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img src="src/img/menu_white_36dp.svg" alt="" class="icon"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="./estruturas.html" class="nav-link">Estruturas</a></li>
+                <li class="nav-item"><a href="#culminancia" class="nav-link">Culminância</a></li>
+                <li class="nav-item"><a href="#ferramentas" class="nav-link">Ferramentas</a></li>
+                <li class="nav-item"><a href="#microorganismo" class="nav-link">Microorganismo</a></li>
+
+            </ul>
+
+            <div class="sobre">
+                <button><a href="#sobre">Sobre</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="estruturas_1">
+        <div class="bacteriofago">
+            <img src="./src/img/bacteira_1.webp"  alt="">
+        </div>
+        <div class="conteudos">
+            <div class="titulo_1">
+                <h1>Virus envelopado</h1>
+            </div>
+            <div class="texto_1">
+                <p>Bactérias são organismos unicelulares microscópicos pertencentes ao domínio <i>Bacteria</i>. Elas não possuem um núcleo organizado, característica que as classifica como procariontes. Podem ser encontradas em praticamente todos os ambientes da Terra, desde o solo e a água até dentro de outros seres vivos. A reprodução das bactérias ocorre principalmente por fissão binária, um processo simples de divisão celular. Dependendo de suas características metabólicas, elas podem ser autotróficas, produzindo seu próprio alimento, ou heterotróficas, obtendo nutrientes de outros organismos ou matéria orgânica. Enquanto algumas bactérias podem causar doenças em humanos, animais e plantas, muitas desempenham papéis essenciais, como no ciclo do nitrogênio, na decomposição de resíduos orgânicos e na manutenção da saúde intestinal por meio da microbiota. Por isso, as bactérias são tanto objeto de preocupação na saúde pública quanto de interesse em biotecnologia e ecologia. lém de suas funções biológicas essenciais, as bactérias têm aplicações significativas na indústria e na ciência. Elas são usadas na produção de alimentos, como queijos e iogurtes, através da fermentação. Na biotecnologia, bactérias são manipuladas geneticamente para produzir medicamentos, como insulina e antibióticos. No meio ambiente, elas desempenham um papel crucial na biorremediação, ajudando a limpar poluentes, como petróleo e metais pesados. Apesar de algumas espécies patogênicas representarem riscos à saúde, o estudo das bactérias tem levado ao desenvolvimento de vacinas, tratamentos e avanços científicos que beneficiam a sociedade como um todo.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

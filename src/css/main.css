@@ -1,0 +1,225 @@
+@import url('reset.css');
+@import url('responsive.css');
+@import url('https://fonts.googleapis.com/css2?family=inter:wght@200;300;400;500&display=swap');
+
+body{
+    background-color: #1e1e1e;
+    height: 100dvh;
+    max-height: 300dvh;
+}
+
+header{
+    background-color: #014034;
+    box-shadow: 0px 3px 10px #a2a2a2;
+    overflow-X: hidden;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    color: #fff;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
+    padding: 10px;
+    overflow-x: hidden;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.nav-link:hover{
+    background-color: #037c664b;
+}
+
+.sobre button{
+    border: none;
+    background-color: #037c664b;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sobre button a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+/* HOME */
+.home {
+    height: 100dvh;
+    width: 100dvw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    overflow-x: hidden;
+}
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.titulo h1 {
+    font-size: 3.438em;
+    text-align: center;
+    text-shadow: 1px 2px 1px #000;
+}
+
+.texto p {
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 1px 2px 1px #000;
+}
+
+.btns {
+    display: flex;
+    gap: 13px;
+    text-shadow: 1px 2px 1px #000;
+    overflow-y: hidden;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+}
+
+.btns button{
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btns button:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 3px 10px #fff;
+}
+
+.btns button:nth-child(1) {
+    background-color: #035848e6;
+    border: 2px solid #035848e6;
+}
+
+.btns button:nth-child(2) {
+    border: 2px solid #fff;
+    background-color: transparent;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 10;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/* Estruturas */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    height: calc(100dvh - 80px);
+    position: absolute;
+    top: 120px;
+    width: 100dvw;
+    overflow-x: hidden;
+}
+.container .titulo{
+    overflow-y: hidden;
+}
+.estruturas{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow-x: inherit;
+    overflow-y: hidden;
+}
+.estrutura{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    border: 1px solid #fff;
+    background-color: rgba(1, 64, 52, .65);
+    overflow-x: inherit;
+    transition: all .3s;
+}
+.estrutura:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 3px 10px #fff;
+}
+.estrutura h5{
+    font-size: 25px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: #36BFB1;
+    color: #000;
+}
