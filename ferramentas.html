@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <script src="./src/js/script.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100dvh;
+            width: 100dvw;
+            background-color: #0e1410;
+        }
+        .estruturas_1{
+            height: calc(100dvh - 90px);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: white;
+        }
+        .conteudos{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .titulo_1{
+            padding: 15px;
+            background-color: #02735E;
+            text-align: center;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .texto_1{
+            width: 800px;
+            padding: 20px;
+            background-color: #2e3b3d;
+            border-radius: 4px;
+            text-align: justify;
+        }
+        .bacteriofago{
+            padding: 15px;
+            background-color: #014034;
+            border-radius: 4px;
+        }
+        .bacteriofago img{
+            width: 400px;
+        }
+    </style>
+</head>
+<body id="body">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>BIOMAKER</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="./estruturas.html" class="nav-link">Estruturas</a></li>
+                    <li class="nav-item"><a href="./culminancia.html" class="nav-link">Culminância</a></li>
+                    <li class="nav-item"><a href="./ferramentas.html" class="nav-link">Ferramentas</a></li>
+                    <li class="nav-item"><a href="#microorganismo" class="nav-link">Microorganismo</a></li>
+                </ul>
+            </div>
+
+            <div class="sobre">
+                <button><a href="#sobre">Sobre</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img src="src/img/menu_white_36dp.svg" alt="" class="icon"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="./estruturas.html" class="nav-link">Estruturas</a></li>
+                    <li class="nav-item"><a href="./culminancia.html" class="nav-link">Culminância</a></li>
+                    <li class="nav-item"><a href="./ferramentas.html" class="nav-link">Ferramentas</a></li>
+                    <li class="nav-item"><a href="#microorganismo" class="nav-link">Microorganismo</a></li>
+
+            </ul>
+
+            <div class="sobre">
+                <button><a href="#sobre">Sobre</a></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="estruturas_1">
+        <div class="bacteriofago">
+            <img src="./src/img/Autodesk-fusion.png"  alt="">
+        </div>
+        <div class="conteudos">
+            <div class="titulo_1">
+                <h1>Autodesk Fusion 360</h1>
+            </div>
+            <div class="texto_1">
+                <section>
+                    <h2>O que é o Autodesk Fusion 360?</h2>
+                    <p>
+                        O <strong>Autodesk Fusion 360</strong> é uma plataforma de design 3D baseada em nuvem que combina ferramentas de modelagem CAD, CAM e CAE. Desenvolvido pela Autodesk, o Fusion 360 é usado para criar modelos digitais para diversos setores, como engenharia, design de produto e fabricação. 
+                    </p>
+                </section>
+            
+                <section>
+                    <h2>Principais Recursos do Fusion 360</h2>
+                    <ul>
+                        <li><strong>Modelagem 3D:</strong> Permite criar peças e montagens complexas com precisão.</li>
+                        <li><strong>Simulação:</strong> Ferramentas de análise para testar o desempenho de peças e sistemas em condições reais.</li>
+                        <li><strong>Fabricação:</strong> Oferece suporte para a criação de G-code para impressoras 3D, fresadoras CNC e outras máquinas de manufatura.</li>
+                        <li><strong>Colaboração:</strong> Como uma plataforma baseada em nuvem, facilita o trabalho em equipe e a revisão de projetos em tempo real.</li>
+                        <li><strong>Design Paramétrico:</strong> Permite modificar facilmente o modelo ao alterar parâmetros definidos.</li>
+                    </ul>
+                </section>
+            
+                <section>
+                    <h2>Vantagens do Autodesk Fusion 360</h2>
+                    <p>
+                        O Fusion 360 oferece uma série de vantagens para profissionais e estudantes. Entre as principais estão:
+                    </p>
+                    <ol>
+                        <li><strong>Integração de ferramentas:</strong> Combina design, engenharia e fabricação em uma única plataforma.</li>
+                        <li><strong>Acessibilidade:</strong> Como é baseado em nuvem, é possível acessar o software e seus projetos de qualquer lugar e a qualquer momento.</li>
+                        <li><strong>Fácil aprendizado:</strong> Sua interface intuitiva permite que novos usuários se adaptem rapidamente ao ambiente de trabalho.</li>
+                        <li><strong>Preço acessível:</strong> Oferece planos de assinatura flexíveis, com uma versão gratuita para estudantes e educadores.</li>
+                    </ol>
+                </section>
+                
+                <p><br></br>Para mais informações, acesse o <a href="https://www.autodesk.com/products/fusion-360/overview" target="_blank" style="background-color:rgba(83, 199, 158, 0.39);">site oficial do Fusion 360</a>.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
