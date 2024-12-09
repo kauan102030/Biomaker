@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas - Bacteria</title>
+    <link rel="stylesheet" href="./src/css/main.css">
+    <script src="./src/js/script.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100dvh;
+            width: 100dvw;
+            background-color: #0e1410;
+        }
+        .estruturas_1{
+            height: calc(100dvh - 90px);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: white;
+        }
+        .conteudos{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .titulo_1{
+            padding: 15px;
+            background-color: #02735E;
+            text-align: center;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .texto_1{
+            width: 800px;
+            padding: 20px;
+            background-color: #2e3b3d;
+            border-radius: 4px;
+            text-align: justify;
+        }
+    
+        .iframe-container {
+            max-width: 100%; /* Ajusta o iframe para a largura da tela */
+            position: relative;
+            overflow: hidden;
+            
+        }
+
+        /* Responsividade do iframe */
+        iframe {
+            width: 100%;  /* O iframe ocupa 100% da largura do contêiner */
+            height: auto; /* A altura se ajusta de acordo com a largura */
+            border: 5;
+            background-color: rgb(17, 17, 17);
+        }
+
+        /* Mude para uma visualização em lista em telas pequenas */
+        @media (min-width: 1300px) {
+            iframe {
+            height: 700px;
+            width: 700px; /* Por exemplo, uma altura maior pode ser útil em telas pequenas */
+            }
+        }
+        @media (min-width: 768px) {
+            iframe {
+            height: 700px;
+            width: 600px; /* Para telas maiores, altura menor */
+            }
+        }
+        /* Mude a visualização para grid em telas grandes */
+        @media (max-width: 768px) {
+            iframe {
+            height: 700px;
+            width: 400px; /* Para telas maiores, altura menor */
+            }
+        }
+    </style>
+</head>
+<body id="body">
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>BIOMAKER</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="./estruturas.html" class="nav-link">Estruturas</a></li>
+                    <li class="nav-item"><a href="./culminancia.html" class="nav-link">Culminância</a></li>
+                    <li class="nav-item"><a href="./ferramentas.html" class="nav-link">Ferramentas</a></li>
+                    <li class="nav-item"><a href="#microorganismo" class="nav-link">Microorganismo</a></li>
+                </ul>
+            </div>
+
+            <div class="sobre">
+                <button><a href="#sobre">Sobre</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img src="src/img/menu_white_36dp.svg" alt="" class="icon"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="./estruturas.html" class="nav-link">Estruturas</a></li>
+                <li class="nav-item"><a href="./culminancia.html" class="nav-link">Culminância</a></li>
+                <li class="nav-item"><a href="./ferramentas.html" class="nav-link">Ferramentas</a></li>
+                <li class="nav-item"><a href="#microorganismo" class="nav-link">Microorganismo</a></li>
+            </ul>
+
+            <div class="sobre">
+                <button><a href="#sobre">Sobre</a></button>
+            </div>
+        </div>
+    </header>
+
+    
+    <div class="estruturas_1">
+        <div class="iframe-container">
+            <iframe src="https://drive.google.com/embeddedfolderview?id=1fypVcmVpT1sZjE0MXMD8U18fRNXzL6Zk#grid"></iframe>
+        </div>
+    </div>
+</body>
+</html>

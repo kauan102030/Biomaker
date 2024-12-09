@@ -104,12 +104,13 @@
         flex-direction: column;
         padding: 0 30px;
         height: 185dvh;
-        background: linear-gradient(#0d0d0d 40%, #777777 60%);
+        background: linear-gradient(#0d0d0d 40%, #072c16e7 60%);
     }
     .estruturas_1 .bacteriofago{
         width: fit-content;
         width: 68%;
     }
+    
     .estruturas_1 .bacteriofago img{
         width: 100%;
     }
@@ -122,6 +123,10 @@
     }
     .estruturas_1 .texto_1 p{
         width: 100%;
+    }
+    .estruturas_1 .bacteriofago iframe{
+        width: fit-content;
+        width: 68%;
     }
 }
 
@@ -164,6 +169,12 @@
     div.estruturas_1{
         height: 150dvh;
     }
+
+    .estruturas_1 .bacteriofago .iframe{
+        width: fit-content;
+        width: 85%;
+    }
+
 }
 
 @media  screen and (max-width: 650px) {
