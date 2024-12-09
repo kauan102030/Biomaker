@@ -223,3 +223,14 @@ header{
     background-color: #36BFB1;
     color: #000;
 }
+footer {
+    width: 100dvw;
+    z-index: 100;
+    text-align: center;
+    padding: 10px;
+    background-color: #02735E;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

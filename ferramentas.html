@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferramentas</title>
+    <title>Biomaker - Ferramentas</title>
     <link rel="stylesheet" href="./src/css/main.css">
     <script src="./src/js/script.js"></script>
     <style>
@@ -31,18 +31,14 @@
             gap: 15px;
         }
         .titulo_1{
-            padding: 15px;
             background-color: #02735E;
             text-align: center;
-            border-radius: 4px;
             font-weight: bold;
         }
         .texto_1{
             width: 800px;
             padding: 20px;
-            background-color: #2e3b3d;
             border-radius: 4px;
-            text-align: justify;
         }
         .bacteriofago{
             padding: 15px;
@@ -51,6 +47,18 @@
         }
         .bacteriofago img{
             width: 400px;
+        }
+
+        @media screen and (max-width: 500px) {
+            .titulo_1{
+                width: 100%;
+            }
+            #body{
+                height: 250dvh !important;
+            }
+            div.estruturas_1{
+                height: 250dvh !important;
+            }
         }
     </style>
 </head>
@@ -67,12 +75,7 @@
                     <li class="nav-item"><a href="./estruturas.html" class="nav-link">Estruturas</a></li>
                     <li class="nav-item"><a href="./culminancia.html" class="nav-link">Culminância</a></li>
                     <li class="nav-item"><a href="./ferramentas.html" class="nav-link">Ferramentas</a></li>
-                    <li class="nav-item"><a href="#microorganismo" class="nav-link">Microorganismo</a></li>
                 </ul>
-            </div>
-
-            <div class="sobre">
-                <button><a href="#sobre">Sobre</a></button>
             </div>
 
             <div class="mobile-menu-icon">
@@ -86,13 +89,8 @@
                     <li class="nav-item"><a href="./estruturas.html" class="nav-link">Estruturas</a></li>
                     <li class="nav-item"><a href="./culminancia.html" class="nav-link">Culminância</a></li>
                     <li class="nav-item"><a href="./ferramentas.html" class="nav-link">Ferramentas</a></li>
-                    <li class="nav-item"><a href="#microorganismo" class="nav-link">Microorganismo</a></li>
 
             </ul>
-
-            <div class="sobre">
-                <button><a href="#sobre">Sobre</a></button>
-            </div>
         </div>
     </header>
 
